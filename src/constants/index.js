@@ -31,7 +31,9 @@ import {
     pr,
     bootstrap,
     swampmaster,
-    bugs
+    bugs,
+    neon_fables,
+    tictactoe
   } from "../assets";
   
   export const navLinks = [
@@ -59,11 +61,11 @@ import {
       icon: web,
     },
     {
-      title: "Multimedia Developer",
+      title: "3D Artist",
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Video Editor",
       icon: creator,
     },
   ];
@@ -253,6 +255,46 @@ import {
       live_project_link:"https://sauravshinde007.itch.io/bugs",
     },
     {
+      name: "Neon Fables",
+      description:
+        "A sidescroller detective game where you are trying to solve a mystery by talking and gathering clues.",
+      tags: [
+        {
+          name: "CSharp",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Unity",
+          color: "green-text-gradient",
+        },
+      ],
+      image: neon_fables,
+      source_code_link: "https://github.com/sauravshinde007/GameOff24",
+      live_project_link:"https://sauravshinde007.itch.io/neon-fables",
+    },
+    {
+      name: "Tic-Tac-Toe",
+      description:
+        "A full-stack Tic-Tac-Toe game with real-time chat functionality, built using the StreamChat API.",
+      tags: [
+        {
+          name: "ReactJS",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "NodeJS",
+          color: "green-text-gradient",
+        },
+        {
+          name: "StreamChat API",
+          color: "green-text-gradient",
+        },
+      ],
+      image: tictactoe,
+      source_code_link: "https://github.com/sauravshinde007/Tic-Tac-Toe",
+      live_project_link:"",
+    },
+    {
       name: "3D Portfolio Website",
       description:
         "A personal portfolio website developed using React and ThreeJS. It showcases my skills and projects in a visually appealing manner, leveraging 3D visuals, animations, and transitions",
@@ -277,7 +319,7 @@ import {
       image: portfolio,
       source_code_link: "https://github.com/sauravshinde007/3D-Portfolio-Website.git",
       live_project_link:"",
-    },
+    }
   ];
   
   export { services, technologies, experiences, projects};

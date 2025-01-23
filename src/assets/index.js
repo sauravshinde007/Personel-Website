@@ -45,9 +45,12 @@ import stickytanks from "./stickytanks.png";
 import portfolio from "./portfolio.png";
 import swampmaster from "./swampmaster.png";
 import bugs from "./bugs.png";
+import neon_fables from "./neon-fables.png";
+import tictactoe from "./tic-tac-toe.png";
 
 //my photo
 import saurav from "./saurav.png";
+import avatar from "./Avatartransparent.png";
 
 export {
   logo,
@@ -89,5 +92,8 @@ export {
   bootstrap,
   saurav,
   swampmaster,
-  bugs
+  bugs,
+  neon_fables,
+  avatar,
+  tictactoe
 };
