@@ -28,31 +28,11 @@ const BlogDetail = () => {
       <p className="text-gray-400 text-xl mb-6">
         {new Date(blog.date).toLocaleDateString()} — {blog.author}
       </p>
-      <div className="text-2xl leading-8">
-        <ReactMarkdown
-          components={{
-            code({ node, inline, className, children, ...props }) {
-              const match = /language-(\w+)/.exec(className || "");
-              return !inline && match ? (
-                <SyntaxHighlighter
-                  style={oneDark}
-                  language={match[1]}
-                  PreTag="div"
-                  {...props}
-                >
-                  {String(children).replace(/\n$/, "")}
-                </SyntaxHighlighter>
-              ) : (
-                <code className={className} {...props}>
-                  {children}
-                </code>
-              );
-            },
-          }}
-        >
-          {blog.content}
-        </ReactMarkdown>
-      </div>
+
+        <div className="prose prose-invert  prose-xl max-w-none">
+            <ReactMarkdown>{blog.content}</ReactMarkdown>
+        </div>
+
       {blog.tags && (
         <div className="mt-6 flex flex-wrap gap-2">
           {blog.tags.map((tag, index) => (

@@ -23,7 +23,7 @@ const AdminDashboard = () => {
     try {
       await axios.delete(`/blogs/${id}`, {
         headers: {
-          Authorization: localStorage.getItem("token"),
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
       });
       fetchBlogs();
