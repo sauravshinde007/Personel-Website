@@ -91,14 +91,6 @@ const Works = () => {
         />
         ))}
       </div>
-
-      {/* <motion.div variants={textVariant()}>
-        <br />
-        <h2 className={styles.sectionHeadText}>3D Designs.</h2>
-      </motion.div> */}
-
-
-
     </>
   )
 }

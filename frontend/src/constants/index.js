@@ -37,19 +37,19 @@ import {
   } from "../assets";
   
   export const navLinks = [
-    {
-      id: "about",
-      title: "About",
-    },
-    {
-      id: "work",
-      title: "Work",
-    },
-    {
-      id: "contact",
-      title: "Contact",
-    },
-  ];
+  {
+    to: "/about-me",
+    title: "About",
+  },
+  {
+    to: "/my-work",
+    title: "Work",
+  },
+  {
+    to: "/blogs",
+    title: "Blogs",
+  },
+];
   
   const services = [
     {

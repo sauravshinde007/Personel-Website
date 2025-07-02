@@ -23,7 +23,7 @@ const Footer = () => {
         <div className="text-sm text-center md:text-right">
           <p>&copy; {new Date().getFullYear()}. All rights reserved.</p>
           <p>
-            Built with ❤️ by <a href="#" className="hover:underline">Saurav Shinde</a>
+            Build by <a href="#" className="hover:underline">Saurav Shinde</a>
           </p>
         </div>
       </div>
