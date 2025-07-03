@@ -49,7 +49,7 @@ const Home = () => {
                 I develop{" "}
                 <span style={{ color: "#915eff", fontWeight: "bold" }}>
                     <Typewriter
-                        words={["Games", "Web Apps", "Software", "3D Models", "Videos"]}
+                        words={["Games", "Web Apps", "Softwares", "3D Models"]}
                         loop={true}
                         cursor
                         cursorStyle="|"

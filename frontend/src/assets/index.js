@@ -11,14 +11,11 @@ import close from "./close.svg";
 
 //Skills
 import css from "./tech/css.png";
-import figma from "./tech/figma.png";
-import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import threejs from "./tech/threejs.svg";
 import unity from "./tech/unity.png";
@@ -27,7 +24,6 @@ import love2d from "./tech/love2d.png";
 import cpp from "./tech/c++.png";
 import csharp from "./tech/csharp.png";
 import python from "./tech/python.png";
-import java from "./tech/java.png";
 import mysql from "./tech/mysql.png";
 import godot from "./tech/godot.png";
 import lua from "./tech/Lua.png";
@@ -47,9 +43,13 @@ import swampmaster from "./swampmaster.png";
 import bugs from "./bugs.png";
 import neon_fables from "./neon-fables.png";
 import tictactoe from "./tic-tac-toe.png";
+import omni from "./omni.jpg";
+import midori from "./fEYnpd.png";
+import pisheti from "./pisheti.png";
+import healtrack from "./healtrack.png";
 
 //my photo
-import saurav from "./saurav.png";
+import saurav from "./newSaurav-removebg-preview.png";
 import avatar from "./Avatartransparent.png";
 
 export {
@@ -63,14 +63,11 @@ export {
   menu,
   close,
   css,
-  figma,
-  git,
   html,
   javascript,
   mongodb,
   nodejs,
   reactjs,
-  redux,
   tailwind,
   threejs,
   gdu,
@@ -82,7 +79,6 @@ export {
   cpp,
   csharp,
   python,
-  java,
   love2d,
   mysql,
   godot,
@@ -95,5 +91,9 @@ export {
   bugs,
   neon_fables,
   avatar,
-  tictactoe
+  tictactoe,
+  omni,
+  midori,
+  pisheti,
+  healtrack
 };

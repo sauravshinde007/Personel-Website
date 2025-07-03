@@ -10,11 +10,8 @@ import {
     tailwind,
     nodejs,
     mongodb,
-    git,
-    figma,
     gdu,
     rewind,
-    portfolio,
     stickytanks,
     threejs,
     unity,
@@ -22,7 +19,6 @@ import {
     cpp,
     csharp,
     python,
-    java,
     blender,
     mysql,
     lua,
@@ -33,7 +29,11 @@ import {
     swampmaster,
     bugs,
     neon_fables,
-    tictactoe
+    tictactoe,
+    omni,
+    midori,
+    pisheti,
+    healtrack
   } from "../assets";
   
   export const navLinks = [
@@ -100,10 +100,6 @@ import {
       icon:csharp,
     },
     {
-      name:"Java",
-      icon: java
-    },
-    {
       name: "Python",
       icon: python,
     },
@@ -148,14 +144,6 @@ import {
       icon: threejs,
     },
     {
-      name: "git",
-      icon: git,
-    },
-    {
-      name: "figma",
-      icon: figma,
-    },
-    {
       name: "Photoshop",
       icon: photo,
     },
@@ -183,32 +171,6 @@ import {
   
   const projects = [
     {
-      name: "3D Portfolio Website",
-      description:
-        "A personal portfolio website developed using React and ThreeJS. It showcases my skills and projects in a visually appealing manner, leveraging 3D visuals, animations, and transitions",
-      tags: [
-        {
-          name: "ReactJS",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "ThreeJS",
-          color: "green-text-gradient",
-        },
-        {
-          name: "EmailJS",
-          color: "green-text-gradient",
-        },
-        {
-          name: "Blender",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: portfolio,
-      source_code_link: "https://github.com/sauravshinde007/3D-Portfolio-Website.git",
-      live_project_link:"",
-    },
-    {
       name: "Tic-Tac-Toe",
       description:
         "A full-stack Tic-Tac-Toe game with real-time chat functionality, built using the StreamChat API.",
@@ -229,6 +191,50 @@ import {
       image: tictactoe,
       source_code_link: "https://github.com/sauravshinde007/Tic-Tac-Toe",
       live_project_link:"",
+    },
+    {
+      name: "PiSheti - Crop Disease Detector",
+      description:
+        "AI-powered system to detect diseases in Cashew, Cassava, Maize, and Tomato crops.",
+      tags: [
+        {
+          name: "ReactJS",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Django",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Tensorflow",
+          color: "green-text-gradient",
+        },
+      ],
+      image: pisheti,
+      source_code_link: "https://github.com/sauravshinde007/Crop-Disease-Detection",
+      live_project_link:"",
+    },
+    {
+      name: "HealTrack",
+      description:
+        "A full-stack Clinic Appointment System",
+      tags: [
+        {
+          name: "ReactJS",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "NodeJS",
+          color: "green-text-gradient",
+        },
+        {
+          name: "JWT",
+          color: "green-text-gradient",
+        },
+      ],
+      image: healtrack,
+      source_code_link: "https://github.com/sauravshinde007/HealTrack",
+      live_project_link:"https://healtrack-frontend.onrender.com/",
     }
   ];
 
@@ -322,18 +328,92 @@ import {
       image: neon_fables,
       source_code_link: "https://github.com/sauravshinde007/GameOff24",
       live_project_link:"https://sauravshinde007.itch.io/neon-fables",
+    },
+    {
+      name: "OMNIDASH",
+      description:
+        "Definately not a ripoff of KARLSON",
+      tags: [
+        {
+          name: "CSharp",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Unity",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Blender",
+          color: "blue-text-gradient",
+        },
+        
+      ],
+      image: omni,
+      source_code_link: "https://github.com/sauravshinde007/OMNIDASH",
+      live_project_link:"https://saurav-san007.itch.io/omnidash",
+    },
+    {
+      name: "Midori's Astro Quest",
+      description:
+        "2D platformer exploration game made in Defold",
+      tags: [
+        {
+          name: "Lua",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Defold",
+          color: "green-text-gradient",
+        }
+        
+      ],
+      image: midori,
+      source_code_link: "https://github.com/sauravshinde007/OMNIDASH",
+      live_project_link:"https://saurav-san007.itch.io/omnidash",
     }
   ];
 
   const designs = [
-     {
-        name: "Landing Page Design",
-        videoSrc: "/videos/landing-demo.mp4",
+    {
+        name: "Sword",
+        videoSrc: "/videos/sword.mp4",
     },
     {
-        name: "3D Logo Animation",
-        videoSrc: "/videos/logo-spin.mp4",
+        name: "Ball Animation",
+        videoSrc: "/videos/ball_anim.mp4",
     },
+    {
+        name: "SpaceCraft",
+        videoSrc: "/videos/space_craft.mp4",
+    },
+    {
+        name: "Black Hole",
+        videoSrc: "/videos/black-hole.mp4",
+    },
+    {
+        name: "Volvo P1800",
+        videoSrc: "/videos/volvo.mp4",
+    },
+    {
+        name: "Kimi No Nawa",
+        videoSrc: "/videos/your-name.mp4",
+    },
+    {
+        name: "Night City",
+        videoSrc: "/videos/night-city.mp4",
+    },
+    {
+        name: "Pictorel Logo",
+        videoSrc: "/videos/logo.mp4",
+    },
+    {
+        name: "Fireworks",
+        videoSrc: "/videos/diwali.mp4",
+    },
+    {
+        name: "Porche 911",
+        videoSrc: "/videos/porche911_UeFQN76q.mp4",
+    }
   ];
   
   export { services, technologies, experiences, projects, games, designs};

@@ -38,15 +38,19 @@ const About = () => {
         <div className="flex-1">
           <motion.div variants={textVariant()}>
             <p className={styles.sectionSubText}>Introduction</p>
-            <h2 className={styles.sectionHeadText}>Overview</h2>
+            <h2 className={styles.sectionHeadText}>About</h2>
           </motion.div>
 
           <motion.p
             variants={fadeIn("", "", 0.1, 1)}
-            className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+            className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] whitespace-pre-line'
           >
-            I am an Information Technology Undergraduate at Pune Institute Of Computer Technology with keen interest in software development, experience in C++, C#, and JavaScript,
-            and expertise in frameworks like React, Node.js, and Three.js. I'm also a Game Developer creating interactive experiences in both games and web apps. Let's work together to bring ideas to life!
+            {`Yo I'm Saurav — a curious developer, designer, and creator who loves turning ideas into real things. Whether it's building fun games, coding web apps, designing cool 3D models, or creating engaging videos, I enjoy exploring different ways to express creativity through technology.
+
+          When I'm not coding or designing, you’ll probably find me watching anime, playing games, or blabbering about Japan.
+          My goal? To keep learning and build awesome things.
+
+          Thanks for stopping by! <3`}
           </motion.p>
         </div>
 

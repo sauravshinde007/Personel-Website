@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Tilt } from "react-tilt";
 
@@ -72,34 +72,57 @@ const ProjectCard = ({
 };
 
 const DesignCard = ({ title, videoSrc }) => {
+  const videoRef = useRef(null);
+  const [aspectRatioStyle, setAspectRatioStyle] = useState({});
+
+  const handleLoadedMetadata = () => {
+    if (videoRef.current) {
+      const { videoWidth, videoHeight } = videoRef.current;
+      const ratio = videoHeight / videoWidth;
+      const cardWidth = 320; // Base width
+
+      // Calculate new height
+      const newHeight = cardWidth * ratio;
+      setAspectRatioStyle({ height: `${newHeight}px` });
+    }
+  };
+
+  const handleMouseEnter = () => {
+    if (videoRef.current) {
+      videoRef.current.play();
+    }
+  };
+
+  const handleMouseLeave = () => {
+    if (videoRef.current) {
+      videoRef.current.pause();
+      videoRef.current.currentTime = 0;
+    }
+  };
+
   return (
     <motion.div
-      whileHover={{
-        scale: 1.05,
-        transition: { duration: 0.3, ease: "easeInOut" },
-      }}
-      className="bg-tertiary rounded-2xl overflow-hidden relative w-[320px] h-[200px] cursor-pointer flex justify-center items-center"
+      whileHover={{ scale: 1.05 }}
+      transition={{ duration: 0.3, ease: "easeInOut" }}
+      className="bg-tertiary rounded-2xl overflow-hidden relative w-full mb-4 cursor-pointer group"
+      style={aspectRatioStyle}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
     >
-      {/* Title (visible by default) */}
-      <div className="absolute inset-0 flex justify-center items-center text-white text-lg font-bold z-10 hover:opacity-0 transition-opacity duration-300">
-        {title}
-      </div>
-
-      {/* Video or GIF (hidden by default) */}
-      <motion.video
-        autoPlay
-        loop
+      <video
+        ref={videoRef}
         muted
+        loop
         playsInline
-        className="w-full h-full object-cover opacity-0 hover:opacity-100 transition-opacity duration-300"
+        onLoadedMetadata={handleLoadedMetadata}
+        className="w-full h-full object-cover"
       >
         <source src={videoSrc} type="video/mp4" />
         Your browser does not support the video tag.
-      </motion.video>
+      </video>
     </motion.div>
   );
 };
-
 
 const Works = () => {
   const [activeCategory, setActiveCategory] = useState("Projects");
@@ -138,7 +161,11 @@ const Works = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="mt-12 flex flex-wrap gap-7 justify-center"
+          className={
+            activeCategory === "Designs"
+              ? "columns-1 sm:columns-2 lg:columns-3 gap-4 mt-12"
+              : "mt-12 flex flex-wrap gap-7 justify-center"
+          }
         >
           {activeCategory === "Designs"
             ? dataToShow.map((design, index) => (
