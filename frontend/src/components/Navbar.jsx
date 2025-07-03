@@ -70,7 +70,7 @@ const Navbar = () => {
               <ul className="list-none flex justify-end items-start flex-col gap-10">
                 {navLinks.map((link) => (
                   <li
-                    key={link.id}
+                    key={link.title}
                     className={`${
                       active === link.title ? 'text-white' : 'text-secondary'
                     } font-poppins font-medium cursor-pointer text-[16px]`}
@@ -79,12 +79,12 @@ const Navbar = () => {
                       setActive(link.title);
                     }}
                   >
-                    <a href={`#${link.id}`}>{link.title}</a>
+                    <Link to={link.to}>{link.title}</Link>
                   </li>
                 ))}
 
                 {/* Resume Button (Mobile View) */}
-                <ResumeButton />
+                {/* <ResumeButton /> */}
               </ul>
             </div>
           )}

@@ -183,6 +183,57 @@ import {
   
   const projects = [
     {
+      name: "3D Portfolio Website",
+      description:
+        "A personal portfolio website developed using React and ThreeJS. It showcases my skills and projects in a visually appealing manner, leveraging 3D visuals, animations, and transitions",
+      tags: [
+        {
+          name: "ReactJS",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "ThreeJS",
+          color: "green-text-gradient",
+        },
+        {
+          name: "EmailJS",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Blender",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: portfolio,
+      source_code_link: "https://github.com/sauravshinde007/3D-Portfolio-Website.git",
+      live_project_link:"",
+    },
+    {
+      name: "Tic-Tac-Toe",
+      description:
+        "A full-stack Tic-Tac-Toe game with real-time chat functionality, built using the StreamChat API.",
+      tags: [
+        {
+          name: "ReactJS",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "NodeJS",
+          color: "green-text-gradient",
+        },
+        {
+          name: "StreamChat API",
+          color: "green-text-gradient",
+        },
+      ],
+      image: tictactoe,
+      source_code_link: "https://github.com/sauravshinde007/Tic-Tac-Toe",
+      live_project_link:"",
+    }
+  ];
+
+  const games = [
+    {
       name: "REWIND",
       description:
         "Simple Platformer Game Made in Love2D framework using LUA scripting language.",
@@ -271,55 +322,18 @@ import {
       image: neon_fables,
       source_code_link: "https://github.com/sauravshinde007/GameOff24",
       live_project_link:"https://sauravshinde007.itch.io/neon-fables",
-    },
-    {
-      name: "Tic-Tac-Toe",
-      description:
-        "A full-stack Tic-Tac-Toe game with real-time chat functionality, built using the StreamChat API.",
-      tags: [
-        {
-          name: "ReactJS",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "NodeJS",
-          color: "green-text-gradient",
-        },
-        {
-          name: "StreamChat API",
-          color: "green-text-gradient",
-        },
-      ],
-      image: tictactoe,
-      source_code_link: "https://github.com/sauravshinde007/Tic-Tac-Toe",
-      live_project_link:"",
-    },
-    {
-      name: "3D Portfolio Website",
-      description:
-        "A personal portfolio website developed using React and ThreeJS. It showcases my skills and projects in a visually appealing manner, leveraging 3D visuals, animations, and transitions",
-      tags: [
-        {
-          name: "ReactJS",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "ThreeJS",
-          color: "green-text-gradient",
-        },
-        {
-          name: "EmailJS",
-          color: "green-text-gradient",
-        },
-        {
-          name: "Blender",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: portfolio,
-      source_code_link: "https://github.com/sauravshinde007/3D-Portfolio-Website.git",
-      live_project_link:"",
     }
   ];
+
+  const designs = [
+     {
+        name: "Landing Page Design",
+        videoSrc: "/videos/landing-demo.mp4",
+    },
+    {
+        name: "3D Logo Animation",
+        videoSrc: "/videos/logo-spin.mp4",
+    },
+  ];
   
-  export { services, technologies, experiences, projects};
+  export { services, technologies, experiences, projects, games, designs};
