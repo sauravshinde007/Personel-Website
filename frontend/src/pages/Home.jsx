@@ -5,6 +5,7 @@ import { Typewriter } from 'react-simple-typewriter';
 import { motion } from 'framer-motion';
 import { fadeIn, textVariant } from '../utils/motion';
 import { Socials } from "../components";
+import { avatar } from "../assets";
 
 const Home = () => {
   return (
@@ -37,7 +38,7 @@ const Home = () => {
                     }}
                 >
                     <img
-                        src="/src/assets/sauravlogo.png"
+                        src={avatar}
                         alt="Saurav"
                         className="w-full h-full object-cover rounded-full"
                     />

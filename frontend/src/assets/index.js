@@ -50,7 +50,7 @@ import healtrack from "./healtrack.png";
 
 //my photo
 import saurav from "./newSaurav-removebg-preview.png";
-import avatar from "./Avatartransparent.png";
+import avatar from "./sauravlogo.png";
 
 export {
   logo,
