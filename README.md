@@ -1,52 +1,73 @@
-# 3D Portfolio Website
+# 💻 Personal Website
 
-A personal portfolio website made using React, Three.js, and Blender.
+A modern, interactive developer portfolio to showcase my projects, games, designs, and blogs — all built with React, Framer Motion, and Three.js.
 
-## Introduction
-This project is a personal portfolio website developed using React and React Router. It showcases my skills and projects in a visually appealing manner, leveraging 3D visuals, animations, and smooth transitions. The website includes sections about me, my work experience, and a contact form for visitors to reach out.
+🌐 **Live Demo**: [link](https://sauravsan.onrender.com/)
 
-The primary goal of this project is to present my work in a modern, interactive format while keeping the user experience intuitive and responsive across devices.
+## 🚀 Features
 
-## Live Demo
-Check out the live version of the portfolio [here](https://saurav-portfolio-three.vercel.app/).
+* ✨ Beautiful animated landing page
+* 🛰️ Starfield background with 3D canvas effects
+* 🎮 Projects section divided into **Projects**, **Games**, and **Designs**
+* 🎥 Dynamic design cards that play videos on hover
+* 📝 Blog section with search and tag filtering
+* 🌙 Dark-themed, modern UI with smooth transitions
+* 🌀 Fully responsive design
 
-## Features
-- **3D Visuals**: Engaging 3D elements and animations created using Three.js.
-- **Responsive Design**: Optimized for both desktop and mobile devices with smooth transitions.
-- **Interactive Navbar**: A dynamic navigation menu that adapts for mobile devices.
-- **Work Experience Timeline**: A vertical timeline representing my career and project milestones.
-- **Contact Form**: Functional form for visitors to send messages via EmailJS integration.
-- **Dynamic Project Showcase**: Project cards with detailed information and clickable icons linking to GitHub.
+## 🛠️ Tech Stack
 
-## Technologies Used
-- **React.js**: Frontend framework for building the interactive UI.
-- **React Router**: For handling navigation between sections.
-- **Framer Motion**: For animations and smooth transitions.
-- **Three.js**: To create and integrate 3D models and visuals.
-- **EmailJS**: To handle contact form submissions.
-- **CSS Modules**: For styling components with scoped CSS classes.
+* **Frontend:** React.js, Tailwind CSS, Framer Motion, Three.js
+* **Backend:** Node.js, Express.js (for blog data API)
+* **Other libraries:** react-simple-typewriter, react-icons, react-tilt (removed in favor of Framer hover)
 
-## Installation
-1. **Clone the Repository**  
-   Open your terminal and run the following command:
-   ```bash
-   git clone <repository-url>
-   cd portfolio-website
-   npm install
-   npm start
-   npm run dev
+## ⚡ Setup & Installation
 
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/your-portfolio.git
+cd your-portfolio
 
-## Usage
-- **Navbar**: Use the navigation bar to smoothly scroll between sections like About, Projects, Experience, and Contact.
-- **3D Visuals**: Explore the 3D elements and animations as you scroll and interact with different sections.
-- **Work Experience**: View the timeline in the 'Experience' section for details about my professional journey.
-- **Project Section**: Click on any project card to view the GitHub repository or details about the project.
-- **Contact Form**: Use the form in the Contact section to send me a message.
+# Install dependencies
+npm install
 
-## Future Enhancements
-- **Blog Section**: Add a blog where I share technical tutorials and personal experiences.
-- **More 3D Interactions**: Add more interactive 3D models for a more immersive experience.
-- **Dark Mode**: Implement a dark/light mode toggle for improved user experience.
-- **Project Filters**: Add filters to sort and view projects based on categories or technologies used.
+# Create an .env file
+cp .env.example .env
 
+# Update API URLs and other environment variables in .env
+
+# Start the development server
+npm run dev
+```
+
+## 🌐 Environment Variables
+
+### Frontend (.env)
+```bash
+VITE_BACKEND_URL=http://localhost:5000/api
+```
+
+### Backend (.env)
+```bash
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret_key
+ADMIN_USERNAME=your_admin_username
+ADMIN_PASSWORD=your_admin_password
+```
+
+Update the `VITE_BACKEND_URL` if you deploy the backend elsewhere (e.g., Render, Vercel, AWS).
+
+## 🎨 Folder Structure
+
+```bash
+src/
+├── assets/          # Images, icons, videos
+├── components/      # Reusable UI components (Navbar, StarsCanvas, etc.)
+├── constants/       # Project, game, design data
+├── hoc/             # Higher-order components
+├── pages/           # Page components (Home, Blogs, Works, etc.)
+├── styles/          # Tailwind & global styles
+├── utils/           # Animations & helper functions
+├── App.jsx
+└── main.jsx
+```
