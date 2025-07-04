@@ -108,7 +108,7 @@ const Blogs = () => {
             >
               <motion.div
                 variants={fadeIn("up", "spring", index * 0.2, 0.8)}
-                whileHover={{ scale: 1.05, transition: { type: "tween", duration: 0.15, ease: "easeOut" } }}
+                whileHover={{ scale: 1.05, transition: { type: "tween", duration: 0.09, ease: "easeOut" } }}
                 whileTap={{ scale: 0.98 }}
                 className="bg-gray-800 text-white p-4 rounded-lg shadow-lg cursor-pointer transition-all duration-300"
               >

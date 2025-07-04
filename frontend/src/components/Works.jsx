@@ -1,6 +1,5 @@
 import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Tilt } from "react-tilt";
 
 import { styles } from "../styles";
 import { github, live } from "../assets";
