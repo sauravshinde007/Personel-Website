@@ -6,7 +6,11 @@ import {textVariant} from '../utils/motion';
 import { styles } from '../styles';
 
 const TechnologyCard = ({ index, name, icon }) => (
-  <Tilt className="xs:w-[100px] w-half">
+   <motion.div
+    whileHover={{ scale: 1.07 }}
+    transition={{ duration: 0.1, ease: "easeInOut" }}
+    className="xs:w-[100px] w-half"
+  >
     <div className="w-full green-pink-gradient p-[1px] rounded-[15px] shadow-card">
       <div
         className="bg-tertiary rounded-[15px] py-3 px-5 min-h-[100px] flex justify-evenly items-center flex-col"
@@ -15,7 +19,7 @@ const TechnologyCard = ({ index, name, icon }) => (
         <h3 className="text-white text-[14px] font-bold text-center">{name}</h3>
       </div>
     </div>
-  </Tilt>
+  </motion.div>
 );
 
 const Tech = () => {

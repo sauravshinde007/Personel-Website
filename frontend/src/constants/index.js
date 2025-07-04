@@ -159,7 +159,7 @@ import {
       company_name: "GameDevUtopia PICT",
       icon: gdu,
       iconBg: "#383E56",
-      date: "July 2024 - Present",
+      date: "July 2024 - June 2025",
       points: [
         "Guided team members in the use of various Game Development tools and technologies.",
         "Organized workshops and seminars to enhance members’ skills in game design and programming.",

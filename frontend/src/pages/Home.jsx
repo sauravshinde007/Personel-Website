@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 import { Contact, StarsCanvas } from "../components";
 import { styles } from '../styles';
 import { Typewriter } from 'react-simple-typewriter';
-import { FaLinkedin, FaGithub, FaYoutube, FaInstagram, FaSpotify } from "react-icons/fa";
 import { motion } from 'framer-motion';
 import { fadeIn, textVariant } from '../utils/motion';
+import { Socials } from "../components";
 
 const Home = () => {
   return (
@@ -61,21 +61,7 @@ const Home = () => {
             </p>
             <p className={`${styles.sectionSubText} font-bold mt-5 mb-2`}>My Home on Internet</p>
             <div className="flex gap-6 justify-center text-4xl">
-              <a href="https://www.linkedin.com/in/saurav-shinde007/" target="_blank" rel="noopener noreferrer" className="hover:text-[#0A66C2] transition-colors">
-                <FaLinkedin />
-              </a>
-              <a href="https://github.com/sauravshinde007" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 transition-colors">
-                <FaGithub />
-              </a>
-              <a href="https://open.spotify.com/user/46bstocc3d65fgbolkayhuqfr?si=c6847961e55a461a" target="_blank" rel="noopener noreferrer" className="hover:text-red-500 transition-colors">
-                <FaSpotify />
-              </a>
-              <a href="https://www.youtube.com/@sauravsan" target="_blank" rel="noopener noreferrer" className="hover:text-red-500 transition-colors">
-                <FaYoutube />
-              </a>
-              <a href="https://www.instagram.com/saurav_san007/" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition-colors">
-                <FaInstagram />
-              </a>
+              <Socials />
             </div>
             {/* Buttons */}
             <div className="flex flex-wrap gap-4 mt-8 justify-center w-full">

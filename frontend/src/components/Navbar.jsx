@@ -82,9 +82,6 @@ const Navbar = () => {
                     <Link to={link.to}>{link.title}</Link>
                   </li>
                 ))}
-
-                {/* Resume Button (Mobile View) */}
-                {/* <ResumeButton /> */}
               </ul>
             </div>
           )}
