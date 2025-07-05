@@ -7,7 +7,23 @@ import { fadeIn, textVariant } from '../utils/motion';
 import { Socials } from "../components";
 import { avatar } from "../assets";
 
+import { useEffect } from "react";
+import axios from "../api/axios";
+
 const Home = () => {
+    useEffect(() => {
+    const pingBackend = async () => {
+      try {
+        await axios.get("/ping"); // Your backend ping route
+        console.log("Backend pinged from Home!");
+      } catch (err) {
+        console.error("Ping failed:", err);
+      }
+    };
+
+    pingBackend();
+  }, []);
+
   return (
     <div>
         <div className="flex flex-col items-center min-h-screen text-center px-4 pt-24">

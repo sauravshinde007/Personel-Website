@@ -14,6 +14,10 @@ app.use(express.json());
 
 app.use("/api/blogs", blogRoutes);
 
+app.get("/api/ping", (req, res) => {
+  res.status(200).json({ message: "Pong! Backend is alive 🚀" });
+});
+
 app.post("/api/login", (req, res) => {
   const { username, password } = req.body;
 

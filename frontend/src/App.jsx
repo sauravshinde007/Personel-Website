@@ -1,5 +1,5 @@
 import { BrowserRouter,Routes, Route  } from "react-router-dom";
-import {About, Contact, Experience, Feedbacks, Hero,Navbar, Tech, Works, StarsCanvas, Footer} from './components';
+import {Navbar,Footer} from './components';
 import { SpeedInsights } from '@vercel/speed-insights/react';
 
 //pages
