@@ -52,6 +52,8 @@ import healtrack from "./healtrack.png";
 import saurav from "./newSaurav-removebg-preview.png";
 import avatar from "./sauravlogo.png";
 
+import leetcode from "./leetcode2.png"
+
 export {
   logo,
   backend,
@@ -95,5 +97,6 @@ export {
   omni,
   midori,
   pisheti,
-  healtrack
+  healtrack,
+  leetcode
 };

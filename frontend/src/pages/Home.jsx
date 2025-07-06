@@ -101,7 +101,7 @@ const Home = () => {
                     My Work
                 </Link>
                 <a
-                    href="https://your-resume-link.com"
+                    href="https://drive.google.com/drive/folders/1m7e_WdLS4p115CBMbbkpSSegIPO6AkWO?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`${styles.sectionSubText} px-6 py-2 bg-tertiary text-white rounded-lg hover:scale-105 transition-transform duration-200`}
